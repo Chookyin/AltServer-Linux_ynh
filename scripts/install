@@ -46,7 +46,7 @@ cd "$install_dir/libgeneral" && ./autogen.sh && make install
 # Downloading usbmuxd2
 cd "$install_dir" && git clone https://github.com/jkcoxson/usbmuxd2
 # Compiling usbmuxd2
-cd "$install_dir/usbmuxd2" && ./autogen.sh && make install
+cd "$install_dir/usbmuxd2" && ./autogen.sh && make LDFLAGS="-pthread" && make install
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
