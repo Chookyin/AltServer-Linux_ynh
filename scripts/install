@@ -64,6 +64,8 @@ ynh_setup_source --dest_dir="$install_dir"  --source_id="$architecture"
 # ownership to all files such as after the ynh_setup_source step
 chown -R $app:www-data "$install_dir"
 
+chmod +x "$install_dir/AltServer"
+
 #=================================================
 # SYSTEM CONFIGURATION
 #=================================================
