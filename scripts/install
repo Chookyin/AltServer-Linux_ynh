@@ -41,12 +41,14 @@ ynh_script_progression --message="Compiling dependencies (this may take a while.
 # Downloading git clone libgeneral
 cd "$install_dir" && git clone https://github.com/tihmstar/libgeneral
 # Compiling libgeneral
-cd "$install_dir/libgeneral" && ./autogen.sh && make install
+cd "$install_dir/libgeneral"
+ynh_exec_warn_less ./autogen.sh && make install
 
 # Downloading usbmuxd2
 cd "$install_dir" && git clone https://github.com/jkcoxson/usbmuxd2
 # Compiling usbmuxd2
-cd "$install_dir/usbmuxd2" && ./autogen.sh && make LDFLAGS="-pthread" && make install
+cd "$install_dir/usbmuxd2"
+ynh_exec_warn_less ./autogen.sh && make LDFLAGS="-pthread" && make install
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
