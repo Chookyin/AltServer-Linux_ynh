@@ -8,8 +8,7 @@
 # PERSONAL HELPERS
 #=================================================
 
-# custom function to detect armv6 and armv7
-# ($YNH_ARCH returns armhf for both...)
+# custom function to detect the system architecture
 detect_arch(){
 	local architecture
 	if [ -n "$(uname -m | grep arm64)" ] || [ -n "$(uname -m | grep aarch64)" ]; then
