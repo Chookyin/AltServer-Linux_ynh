@@ -70,6 +70,11 @@ ynh_systemd_action --service_name=$app --action="stop" --log_path="/var/log/$app
 
 ynh_script_progression --message="Compiling dependencies (this may take a while...)" --weight=15
 
+# Downloading git clone libgeneral
+cd "$install_dir" && git clone https://github.com/tihmstar/libgeneral
+# Compiling libgeneral
+cd "$install_dir/libgeneral" && ./autogen.sh && make install
+
 # Downloading usbmuxd2
 cd "$install_dir" && git clone https://github.com/jkcoxson/usbmuxd2
 # Compiling usbmuxd2
@@ -90,6 +95,8 @@ fi
 # permission by default ... however, you may need to recursively reapply
 # ownership to all files such as after the ynh_setup_source step
 chown -R $app:www-data "$install_dir"
+
+chmod +x "$install_dir/AltServer"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
