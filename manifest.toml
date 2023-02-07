@@ -18,7 +18,7 @@ userdoc = "https://github.com/NyaMisty/AltServer-Linux#readme"
 architectures = ["amd64", "i586", "armv7", "arm64"]
 disk = "50M"
 multi_instance = false
-ram.build = "500M"
+ram.build = "300M"
 ram.runtime = "50M"
 yunohost = ">= 11.1.6"
 
