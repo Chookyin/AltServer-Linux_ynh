@@ -32,7 +32,7 @@ Useful only if your YunoHost server is on your local network (at home) or if you
 ## Disclaimers / important information
 
 - Does not work if your YunoHost server is remote (possible through a VPN to it)
-- Need to connect the device via USB to express trust in the server
+- Requires to connect the device via USB to express trust in the server (the first time)
 - No IPA sideload, only refresh (or sideload using CLI)
 ## Documentation and resources
 
