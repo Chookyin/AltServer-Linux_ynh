@@ -16,16 +16,12 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 ## Vue d’ensemble
 
 To refresh your [AltStore](https://altstore.io/) sideloaded apps with on your iPhone or iPad.
-Useful only if your YunoHost server is on your local network (at home) or if you use a VPN (e.g. Wireguard) to it.
+Useful only if your YunoHost server is on your local network (at home) or if you use a VPN (e.g. [Wireguard](https://github.com/YunoHost-Apps/wireguard_ynh)) to it.
 
 ### Features
 
-- Ut enim ad minim veniam, quis nostrud exercitation ullamco ;
-- Laboris nisi ut aliquip ex ea commodo consequat ;
-- Duis aute irure dolor in reprehenderit in voluptate ;
-- Velit esse cillum dolore eu fugiat nulla pariatur ;
-- Excepteur sint occaecat cupidatat non proident, sunt in culpa."
-
+- Refresh your apps when the YunoHost server is on your local network
+- Also works via VPN connection to the server or the server's local network
 
 **Version incluse :** 0.0.5~ynh1
 
@@ -35,19 +31,8 @@ Useful only if your YunoHost server is on your local network (at home) or if you
 
 ## Avertissements / informations importantes
 
-* Any known limitations, constrains or stuff not working, such as (but not limited to):
-    * requiring a full dedicated domain ?
-    * architectures not supported ?
-    * not-working single-sign on or LDAP integration ?
-    * the app requires an important amount of RAM / disk / .. to install or to work properly
-    * etc...
-
-* Other infos that people should be aware of, such as:
-    * any specific step to perform after installing (such as manually finishing the install, specific admin credentials, ...)
-    * how to configure / administrate the application if it ain't obvious
-    * upgrade process / specificities / things to be aware of ?
-    * security considerations ?
-
+- Does not work if your YunoHost server is remote (possible through a VPN to it)
+- No IPA sideload, only refresh (or sideload using CLI)
 ## Documentations et ressources
 
 * Documentation officielle utilisateur : <https://github.com/NyaMisty/AltServer-Linux#readme>
