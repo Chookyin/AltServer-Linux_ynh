@@ -1,0 +1,7 @@
+SOURCE_URL=https://github.com/NyaMisty/AltServer-Linux/releases/download/v0.0.5/AltServer-armv7
+SOURCE_SUM=sha256 checksum
+SOURCE_SUM_PRG=sha256sum
+SOURCE_FORMAT=
+SOURCE_IN_SUBDIR=false
+SOURCE_FILENAME=AltServer-armv7
+SOURCE_EXTRACT=false
