@@ -15,7 +15,8 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 ## Vue d’ensemble
 
-Some long and extensive description of what the app is and does, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+To refresh your [AltStore](https://altstore.io/) sideloaded apps with on your iPhone or iPad.
+Useful only if your YunoHost server is on your local network (at home) or if you use a VPN (e.g. Wireguard) to it.
 
 ### Features
 
