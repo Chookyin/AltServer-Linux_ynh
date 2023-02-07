@@ -1,2 +1,3 @@
 - Does not work if your YunoHost server is remote (possible through a VPN to it)
+- Need to connect the device via USB to express trust in the server
 - No IPA sideload, only refresh (or sideload using CLI)
