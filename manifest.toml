@@ -29,4 +29,4 @@ yunohost = ">= 11.1.6"
 [resources.install_dir]
 
 [resources.apt]
-packages = "libavahi-compat-libdnssd-dev, libusb-1.0-0-dev, libplist-dev, libplist++-dev, libusbmuxd-dev, libimobiledevice-dev, libavahi-client-dev, git, make, autoconf, automake, libtool-bin, pkg-config, clang"
+packages = "libavahi-compat-libdnssd-dev, libusb-1.0-0-dev, libplist-dev, libplist++-dev, libusbmuxd-dev, libimobiledevice6, libimobiledevice-dev, libimobiledevice-utils, libavahi-client-dev, git, make, autoconf, automake, libtool-bin, pkg-config, clang"
