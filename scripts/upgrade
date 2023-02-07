@@ -102,8 +102,6 @@ yunohost service add $app --description="AltServer-Linux for YunoHost" --log="/v
 
 ynh_use_logrotate --non-append
 
-ynh_add_fail2ban_config --logpath="/var/log/nginx/${domain}-error.log" --failregex="Regex to match into the log for a failed login"
-
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
