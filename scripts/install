@@ -33,6 +33,17 @@ source /usr/share/yunohost/helpers
 #=================================================
 # APP "BUILD" (DEPLOYING SOURCES, VENV, COMPILING ETC)
 #=================================================
+# DOWNLOAD AND COMPILING THE DEPENDENCIES
+#=================================================
+
+ynh_script_progression --message="Compiling dependencies (this may take a while...)" --weight=15
+
+# Downloading usbmuxd2
+cd "$install_dir" && git clone https://github.com/jkcoxson/usbmuxd2
+# Compiling usbmuxd2
+cd usbmuxd2 && ./autogen.sh && make
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression --message="Setting up source files..." --weight=1
