@@ -1,5 +1,5 @@
 SOURCE_URL=https://github.com/NyaMisty/AltServer-Linux/releases/download/v0.0.5/AltServer-i586
-SOURCE_SUM=sha256 checksum
+SOURCE_SUM=c71b9cc5e7e614e8999fa7e0027299eb2cf1706fa64a95ef2f3c65962e3ddc42
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=
 SOURCE_IN_SUBDIR=false
