@@ -48,16 +48,16 @@ cd usbmuxd2 && ./autogen.sh && make
 #=================================================
 ynh_script_progression --message="Setting up source files..." --weight=1
 
+# detect_arch comes from _common.sh / personnal helpers
+architecture=$(detect_arch)
+
 # Download, check integrity, uncompress and patch the source from app.src
-ynh_setup_source --dest_dir="$install_dir"
+ynh_setup_source --dest_dir="$install_dir"  --source_id="$architecture"
 
 # $install_dir will automatically be initialized with some decent 
 # permission by default ... however, you may need to recursively reapply
 # ownership to all files such as after the ynh_setup_source step
 chown -R $app:www-data "$install_dir"
-
-# Delete the architecture at the end of the binary name
-cd "$install_dir" && mv AltServer-* AltServer
 
 #=================================================
 # SYSTEM CONFIGURATION
