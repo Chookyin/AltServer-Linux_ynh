@@ -1,3 +1,4 @@
 - Does not work if your YunoHost server is remote (possible through a VPN to it)
 - Requires to connect the device via USB to express trust in the server (the first time)
 - No IPA sideload, only refresh (or sideload using CLI)
+- ⚠️ AltServer and its dependencies are running with the root user
