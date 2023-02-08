@@ -33,14 +33,14 @@ chown -R $app:www-data "$install_dir"
 
 # Updating libgeneral
 cd "$install_dir/libgeneral"
-ynh_exec_as git config --global --add safe.directory "$install_dir/libgeneral"
+ynh_exec_as $app git config --global --add safe.directory "$install_dir/libgeneral"
 ynh_exec_as $app git pull
 # Compiling libgeneral
 ynh_exec_warn_less ./autogen.sh && make install
 
 # Updating usbmuxd2
 cd "$install_dir/usbmuxd2"
-ynh_exec_as git config --global --add safe.directory "$install_dir/usbmuxd2"
+ynh_exec_as $app git config --global --add safe.directory "$install_dir/usbmuxd2"
 ynh_exec_as $app git pull
 # Compiling usbmuxd2
 ynh_exec_warn_less ./autogen.sh && make LDFLAGS="-pthread" && make install
