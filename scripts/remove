@@ -41,6 +41,13 @@ fi
 
 ynh_remove_systemd_config
 
+ynh_add_config --template="../conf/AltServer.target" --destination="/etc/systemd/system/AltServer.target"
+
+ynh_secure_remove --file="/etc/systemd/system/AltServer.target"
+ynh_remove_systemd_config [--service=AltServer] [--template=AltServer]
+ynh_remove_systemd_config [--service=avahi-daemon] [--template=avahi-daemon]
+ynh_remove_systemd_config [--service=usbmuxd] [--template=usbmuxd]
+
 ynh_remove_logrotate
 
 # Remove other various files specific to the app... such as :

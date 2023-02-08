@@ -33,7 +33,10 @@ ynh_backup --src_path="/etc/logrotate.d/$app"
 # BACKUP SYSTEMD
 #=================================================
 
-ynh_backup --src_path="/etc/systemd/system/$app.service"
+ynh_backup --src_path="/etc/systemd/system/AltServer.target"
+ynh_backup --src_path="/etc/systemd/system/AltServer.service"
+ynh_backup --src_path="/etc/systemd/system/avahi-daemon.service"
+ynh_backup --src_path="/etc/systemd/system/usbmuxd.service"
 
 #=================================================
 # END OF SCRIPT

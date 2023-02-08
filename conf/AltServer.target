@@ -1,0 +1,3 @@
+[Unit]
+Description=__APP__
+Wants=avahi-daemon.service usbmuxd.service AltServer.service

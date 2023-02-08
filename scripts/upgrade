@@ -110,7 +110,11 @@ chmod +x "$install_dir/AltServer"
 #=================================================
 ynh_script_progression --message="Upgrading system configurations related to $app..." --weight=1
 
-ynh_add_systemd_config
+ynh_add_config --template="../conf/AltServer.target" --destination="/etc/systemd/system/AltServer.target"
+
+ynh_add_systemd_config [--service=AltServer] [--template=AltServer]
+ynh_add_systemd_config [--service=avahi-daemon] [--template=avahi-daemon]
+ynh_add_systemd_config [--service=usbmuxd] [--template=usbmuxd]
 
 yunohost service add $app --description="AltServer-Linux for YunoHost" --log="/var/log/$app/$app.log"
 

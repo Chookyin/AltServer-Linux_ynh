@@ -1,15 +1,15 @@
 [Unit]
-Description=AltServer-Linux
+Description=usbmuxd (AltServer)
 After=network.target
+Requires=avahi-daemon.service
+PartOf=__APP__.target
 
 [Service]
 Type=simple
 User=root
 Group=root
 WorkingDirectory=__INSTALL_DIR__/
-ExecStartPre=avahi-daemon -D
-ExecStartPre=usbmuxd -d -s
-ExecStart=__INSTALL_DIR__/AltServer
+ExecStart=usbmuxd -d -s
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 
