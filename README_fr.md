@@ -34,6 +34,7 @@ Useful only if your YunoHost server is on your local network (at home) or if you
 - Does not work if your YunoHost server is remote (possible through a VPN to it)
 - Requires to connect the device via USB to express trust in the server (the first time)
 - No IPA sideload, only refresh (or sideload using CLI)
+- ⚠️ AltServer and its dependencies are running with the root user
 ## Documentations et ressources
 
 * Documentation officielle utilisateur : <https://github.com/NyaMisty/AltServer-Linux#readme>
