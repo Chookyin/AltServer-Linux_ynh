@@ -38,6 +38,7 @@ source /usr/share/yunohost/helpers
 
 ynh_script_progression --message="Compiling dependencies (this may take a while...)" --weight=15
 
+mkdir -p "$install_dir/libgeneral" && mkdir -p "$install_dir/usbmuxd2"
 chown -R $app:www-data "$install_dir"
 
 # Downloading git clone libgeneral
