@@ -8,7 +8,7 @@
 # PERSONAL HELPERS
 #=================================================
 
-# custom function to detect the system architecture
+# custom function to detect the system architecture (and discriminate armv6/7)
 detect_arch(){
 	local architecture
 	if [ -n "$(uname -m | grep arm64)" ] || [ -n "$(uname -m | grep aarch64)" ]; then
