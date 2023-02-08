@@ -15,7 +15,7 @@ license = "AGPL-3"
 userdoc = "https://github.com/NyaMisty/AltServer-Linux#readme"
 
 [integration]
-architectures = ["amd64", "i386", "armhf", "arm64"]
+architectures = "all"
 disk = "50M"
 multi_instance = false
 ram.build = "300M"
