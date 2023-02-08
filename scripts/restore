@@ -28,6 +28,8 @@ chown -R $app:www-data "$install_dir"
 
 ynh_script_progression --message="Compiling dependencies (this may take a while...)" --weight=15
 
+chown -R $app:www-data "$install_dir"
+
 # Updating libgeneral
 cd "$install_dir/libgeneral"
 ynh_exec_as $app git pull
